@@ -20,6 +20,28 @@ https://mermaid-js.github.io/mermaid/#/
 * email
 * pipeline
 
+## Workflows
+* whiteboard
+* adhoc online
+* existing tool
+* tree -> pipeline -> editor -> graphviz -> output
+
+## Pipeline tools
+* grep
+* awk
+* groovy
+
+## Output formats
+* PNG 
+* PDF
+* SVG
+
+## Language features
+* connections
+* shapes
+* colors
+* clusters
+
 ## Langauge Examples
 * Scala
 * Dart
