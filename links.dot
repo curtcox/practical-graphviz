@@ -1,0 +1,5 @@
+digraph G {
+ rankdir=LR
+"[URL=\"http://www.google.com/\"]" [URL="http://www.google.com/"]
+"Embedded Links"[shape=none fontsize=40]
+}

@@ -1,0 +1,82 @@
+digraph G {
+
+rankdir=LR
+"Workflow"[shape=none fontsize=40]
+
+files -> pipeline -> editor -> graphviz -> output [color=blue arrowsize=4 arrowhead=vee]
+
+before [shape=none label=""]
+after [shape=none label=""]
+before->after [label="and then" fontsize=30 color=blue arrowsize=4 arrowhead=vee]
+
+files [shape=none fontsize=30]
+pipeline [shape=none fontsize=30]
+graphviz [shape=none fontsize=30]
+editor [shape=none fontsize=30]
+output [shape=none fontsize=30]
+
+"C#" -> files
+"Scala" -> files
+"Dart" -> files
+"Go" -> files
+"Java" -> files
+"Groovy" -> files
+"Objective C" -> files
+
+ grep-> pipeline
+ awk-> pipeline
+ groovy-> pipeline
+
+ vi->editor
+ Atom->editor
+ VSCode->editor
+ online->editor
+ xdot->editor
+ IntelliJ->editor
+
+ PDF->output
+ PNG->output
+ SVG->output
+
+ member [shape=none label=""]
+ set [shape=none label=""]
+ member->set [label="for instance" fontsize=30]
+
+ subgraph cluster_languages {
+   style="invis"
+   "C#" [shape=none]
+   "Scala" [shape=none]
+   "Dart" [shape=none]
+   "Go" [shape=none]
+   "Java" [shape=none]
+   "Groovy" [shape=none]
+   "Objective C" [shape=none]
+ }
+
+ subgraph cluster_pipeline {
+   style="invis"
+   grep [shape=none]
+    awk [shape=none]
+   groovy [shape=none]
+ }
+
+subgraph cluster_editor {
+ style="invis"
+ IntelliJ [shape=none]
+ Atom     [shape=none]
+ VSCode   [shape=none]
+ vi       [shape=none]
+ online   [shape=none]
+ xdot     [shape=none]
+}
+
+ subgraph cluster_output {
+   style="invis"
+   PDF [shape=none]
+   PNG [shape=none]
+   SVG [shape=none]
+ }
+
+ tldr -> graphviz
+ tldr [shape=none fontsize=20 label="dot -Tpng -O path/to/file.dot"]
+}

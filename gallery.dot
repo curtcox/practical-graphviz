@@ -1,0 +1,33 @@
+digraph G {
+
+"pot of water" [shape=cylinder style=filled fillcolor=gray]
+
+subgraph cluster_arrowType {
+label = "arrow types"
+ a -> b
+ a -> "[arrowhead=dot]" [arrowhead=dot]
+ a -> "[arrowhead=diamond]" [arrowhead=diamond]
+ a -> "[arrowsize=2]" [arrowsize=2]
+ a -> "[arrowtail=2]" [arrowhead="invempty"]
+ a -> "[dir=both color="red:blue"]" [dir=both color="red:blue"]
+ c -> "[dir=none color=green:red;0.25:blue]" [dir=none color="green:red;0.25:blue"]
+}
+
+subgraph cluster_color {
+}
+
+subgraph cluster_style {
+ label = "[style=?]"
+ filled [style=filled]
+ invis [style=invis]
+}
+
+subgraph cluster_shape {
+ label = "[shape=?]"
+ box [shape=box]
+ circle [shape=circle]
+ doublecircle [shape=doublecircle]
+ cylinder [shape=cylinder]
+}
+
+}

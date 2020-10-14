@@ -1,0 +1,50 @@
+digraph G {
+
+rankdir=LR
+
+edge[arrowhead="none"]
+
+  me -> "my wife"
+  me -> "my son"
+  me -> "my daughter"
+  me -> "my brother"
+  me -> "my sister"
+  me -> "my father"
+  me -> "my mother"
+
+  "my wife" -> "my son"
+  "my wife" -> "my daughter"
+
+  "my mother" -> "my father"
+  "my father" -> "my brother"
+  "my father" -> "my sister"
+  "my mother" -> "my brother"
+  "my mother" -> "my sister"
+
+  "my mother" -> "my mother's father"
+  "my mother" -> "my mother's mother"
+  "my mother" -> "my mother's brother"
+  "my mother" -> "my mother's sister"
+
+  "my father" -> "my father's father"
+  "my father" -> "my father's mother"
+  "my father" -> "my father's brother"
+  "my father" -> "my father's sister"
+
+  "my sister" -> "my sister's husband"
+  "my sister" -> "my sister's son"
+  "my sister" -> "my sister's daughter"
+
+  "my brother" -> "my brother's wife"
+  "my brother" -> "my brother's son"
+  "my brother" -> "my brother's daughter"
+
+  "my wife" -> "my wife's father"
+  "my wife" -> "my wife's mother"
+  "my wife" -> "my wife's brother"
+  "my wife" -> "my wife's sister"
+
+  "A different family tree"[shape=none URL="https://graphviz.org/Gallery/directed/kennedyanc.html"]
+  "My\n nuclear family\n relationships" [fontsize=20 shape=none]
+
+}

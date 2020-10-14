@@ -1,0 +1,12 @@
+digraph G {
+
+ rankdir=LR
+
+ title[label="https://graphviz.org/doc/info/colors.html" shape=none]
+
+default
+"[color=red]" [color=red]
+"[fontcolor=blue]" [fontcolor=blue]
+"[style=filled color=red]" [style=filled color=red]
+
+}

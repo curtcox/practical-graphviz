@@ -1,0 +1,9 @@
+digraph G {
+ Practical [fontsize=40 shape=star style=filled color=yellow]
+
+ Iterative -> Practical
+ Quick -> Practical
+ Automated -> Practical
+ Maintainable -> Practical
+ Text -> Practical
+}

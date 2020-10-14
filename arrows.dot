@@ -1,0 +1,16 @@
+digraph G {
+
+ rankdir=LR
+ "Arrows"[shape=none fontsize=40]
+
+ title[label="https://graphviz.org/doc/info/arrows.html" URL="https://graphviz.org/doc/info/arrows.html" shape=none]
+
+ a -> b
+ a -> "[arrowhead=dot]" [arrowhead=dot]
+ a -> "[arrowhead=diamond]" [arrowhead=diamond]
+ a -> "[arrowsize=3]" [arrowsize=3]
+ a -> "[arrowtail=invempty]" [arrowhead="invempty"]
+ a -> "[dir=both color=red:blue]" [dir=both color="red:blue"]
+ a -> "[dir=none color=green:red;0.25:blue]" [dir=none color="green:red;0.25:blue"]
+
+}
