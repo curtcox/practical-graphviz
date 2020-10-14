@@ -1,0 +1,15 @@
+@startuml
+digraph G {
+
+rankdir=BT
+
+me   -> Alex
+Alex -> Eric
+Eric -> Nick
+Nick -> Ben
+Ben  -> Nate
+Nate -> Mike
+Mike -> Jim
+
+}
+@enduml
