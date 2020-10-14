@@ -1,0 +1,13 @@
+# GitPitch 4.0 Slide Deck
+gitpitch : 4.0
+
+# Published to gitpitch.com
+published: true
+
+# Custom CSS Style Rules (Optional)
+#theme-override: assets/css/PITCHME.css
+
+# Slide Deck Metadata
+title : "Practical Graphviz"
+description : "Practical Graphviz"
+thumbnail : assets/img/app.png
