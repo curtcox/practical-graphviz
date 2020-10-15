@@ -83,6 +83,10 @@
 * Meraki Web Gateway
 * Recipe
 +++
+@plantuml[drop=center, pad=30px, width=1000px](puml/packages.puml)
++++
+@plantuml[drop=center, pad=30px, width=1000px](puml/gateway.puml)
++++
 @plantuml[drop=center, width=1700px](puml/recipe.puml)
 ---
 ## Embedded links
