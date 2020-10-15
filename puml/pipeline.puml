@@ -4,10 +4,10 @@ rankdir=LR
 #grep -riI import . | grep -v "[T|t]est"  | sed 's|./groovy/||' | sed 's/.groovy:import / -> /'
 imports -> no_tests -> no_folder -> arrow
 
-imports  [shape=none label="grep -riI import ."]
-no_tests [shape=none label="grep -v \"[T|t]est\""]
-no_folder[shape=none label="sed 's|./groovy/||'"]
-arrow    [shape=none label="sed 's/.groovy:import / -> /'"]
+imports  [fontsize=30 shape=none label="grep -riI import ."]
+no_tests [fontsize=30 shape=none label="grep -v \"[T|t]est\""]
+no_folder[fontsize=30 shape=none label="sed 's|./groovy/||'"]
+arrow    [fontsize=30 shape=none label="sed 's/.groovy:import / -> /'"]
 
 "all import statements"  -> imports
 "no test files"          -> no_tests
