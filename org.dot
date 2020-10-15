@@ -10,4 +10,6 @@ Ben  -> Nate
 Nate -> Mike
 Mike -> Jim
 
+me [label="Curt (me)" style=filled color=blue fontcolor=white]
+
 }

@@ -1,3 +1,4 @@
+@startuml
 digraph G {
 
  Source -> Graphviz -> Diagrams [arrowsize=3 arrowhead=vee color=blue]
@@ -10,3 +11,4 @@ digraph G {
  "Version Control Friendly" -> Source
 
 }
+@enduml

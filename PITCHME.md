@@ -8,43 +8,33 @@
 * Tech
 +++
 ## Org Chart
-@plantuml[drop=left, pad=30px, width=1000px](org.puml)
+@plantuml[drop=left, pad=30px, width=1000px](puml/org.puml)
 +++
-# Family
+@plantuml[drop=center, pad=30px, width=1000px](puml/family.puml)
 +++
 # Tech
 ---
 ## Practical Graphviz?
 * Graphviz
 * Practical
++++
+@plantuml[drop=center, pad=30px, width=1000px](puml/graphviz.puml)
++++
+@plantuml[drop=center, pad=30px, width=1000px](puml/practical.puml)
 ---
-## Also
-* [Mermaid](https://mermaid-js.github.io/mermaid/#/)
-* [Live Editor](https://mermaid-js.github.io/mermaid-live-editor)
-* Mermaid vs Graphviz
----
-## Online
-* http://viz-js.com/
-* https://edotor.net/
-* http://www.webgraphviz.com/
-* http://graphviz.it/#/gallery/clust1.gv
-* https://stamm-wilbrandt.de/GraphvizFiddle/
-* https://dreampuf.github.io/GraphvizOnline/
----
-## Platform specific installs
-* Use your package manager
-* https://graphviz.org/download/
----
-## Benefits of source
-* source control
-* email
-* pipeline
+## Benefits of Source Code
+* Source Control
+* Easier Merges
+* Email
+* Pipeline
 ---
 ## Workflows
-* whiteboard
-* adhoc online
-* existing tool
+* Whiteboard
+* Adhoc online
+* Existing tool
 * tree -> pipeline -> editor -> graphviz -> output
++++
+@plantuml[drop=center, pad=30px, width=1500px](puml/workflow.puml)
 ---
 ## Pipeline tools
 * grep
@@ -64,19 +54,19 @@
 * shapes
 * labels
 * colors
----
-## Language features
-* connections
-* shapes
-* colors
-* clusters
++++
+@plantuml[drop=center, pad=30px, width=1000px](puml/color.puml)
++++
+@plantuml[drop=center, pad=30px, width=1000px](puml/shapes.puml)
++++
+@plantuml[drop=center, pad=30px, width=1000px](puml/arrows.puml)
 ---
 ## Output formats
 * PNG
 * PDF
 * SVG
 ---
-## Langauge Examples
+## Language Examples
 * Scala
 * Dart
 * [Go](https://graphviz.org/Gallery/directed/go-package.html)
@@ -89,13 +79,33 @@
 * Scala
 * Cocoapods
 ---
-## Other examples
-* gallery
-* recipe
+## Examples
+* Meraki Web Gateway
+* Recipe
++++
+@plantuml[drop=center, pad=30px, width=1500px](puml/recipe.puml)
 ---
-## Other ouputs
 ## Embedded links
+@plantuml[drop=center, pad=30px, width=1000px](puml/links.puml)
+---
 ## API
+---
+## Online
+* http://viz-js.com/
+* https://edotor.net/
+* http://www.webgraphviz.com/
+* http://graphviz.it/#/gallery/clust1.gv
+* https://stamm-wilbrandt.de/GraphvizFiddle/
+* https://dreampuf.github.io/GraphvizOnline/
+---
+## Platform specific installs
+* Use your package manager
+* https://graphviz.org/download/
+---
+## Also
+* [Mermaid](https://mermaid-js.github.io/mermaid/#/)
+* [Live Editor](https://mermaid-js.github.io/mermaid-live-editor)
+* Mermaid vs Graphviz
 ---
 # Questions
 ---

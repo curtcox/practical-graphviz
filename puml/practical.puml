@@ -1,3 +1,4 @@
+@startuml
 digraph G {
 
  Practical [fontsize=40 shape=star style=filled color=yellow]
@@ -8,3 +9,4 @@ digraph G {
  Maintainable -> Practical
  Text         -> Practical
 }
+@enduml

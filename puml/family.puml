@@ -1,3 +1,4 @@
+@startuml
 digraph G {
 
 rankdir=LR
@@ -49,3 +50,4 @@ edge[arrowhead="none"]
   "My\n nuclear family\n relationships" [fontsize=20 shape=none]
 
 }
+@enduml
