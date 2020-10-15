@@ -80,12 +80,14 @@
 * Cocoapods
 ---
 ## Examples
-* Meraki Web Gateway
+* [Meraki Web Gateway](https://github.com/curtcox/Meraki-Web-Gateway)
 * Recipe
 +++
-@plantuml[drop=center, pad=30px, width=1000px](puml/packages.puml)
+@plantuml[drop=center, pad=30px, width=1800px](puml/pipeline.puml)
 +++
-@plantuml[drop=center, pad=30px, width=1000px](puml/gateway.puml)
+@plantuml[drop=center, pad=30px, width=1500px](puml/packages.puml)
++++
+@plantuml[drop=center, pad=30px, width=1500px](puml/gateway.puml)
 +++
 @plantuml[drop=center, width=1700px](puml/recipe.puml)
 ---

@@ -1,0 +1,59 @@
+digraph G {
+rankdir=LR
+#grep -riI import . | grep -v "[T|t]est"  | sed 's|./groovy/||' | sed 's/.groovy:import / -> /'
+imports -> no_tests -> no_folder -> arrow
+
+imports  [fontsize=30 shape=none label="grep -riI import ."]
+no_tests [fontsize=30 shape=none label="grep -v \"[T|t]est\""]
+no_folder[fontsize=30 shape=none label="sed 's|./groovy/||'"]
+arrow    [fontsize=30 shape=none label="sed 's/.groovy:import / -> /'"]
+
+"all import statements"  -> imports
+"no test files"          -> no_tests
+"drop containing folder" -> no_folder
+"change imports to ->"   -> arrow
+
+arrow -> all_imports
+
+all_imports [
+shape=none
+label="
+Server -> server.*
+Server -> routes.*
+server/JettyLauncher -> org.eclipse.jetty.server.*
+server/JettyLauncher -> org.eclipse.jetty.servlet.*
+server/JettyLauncher -> javax.servlet.http.*
+server/JettyLauncher -> javax.servlet.*
+server/GroovyServletAdapter -> groovy.servlet.*
+server/GroovyServletAdapter -> javax.servlet.http.*
+server/GroovyServletAdapter -> javax.servlet.*
+json/Json -> groovy.json.*
+meraki/Meraki -> json.*
+meraki/Meraki -> http.*
+meraki/MerakiHttp -> http.*
+http/Http -> java.net.*
+domain/Clients -> json.*
+domain/Clients -> meraki.*
+domain/Devices -> json.*
+domain/Devices -> meraki.*
+domain/ClientConnectionsSnapshot -> java.time.*
+domain/ClientConnectionsSnapshot -> groovy.transform.*
+domain/Organizations -> meraki.*
+domain/Networks -> json.*
+domain/Networks -> meraki.*
+domain/ClientConnections -> json.*
+domain/ClientConnections -> meraki.*
+domain/ClientConnections -> java.time.*
+domain/ClientConnections -> java.time.temporal.*
+domain/TimeRange -> java.time.*
+domain/TimeRange -> groovy.transform.*
+routes/Router -> gateway.*
+routes/Router -> domain.*
+routes/Router -> javax.servlet.http.*
+routes/Exec -> meraki.*
+gateway/Gateway -> json.*
+gateway/Gateway -> meraki.*
+gateway/Linker -> json.*
+gateway/Linker -> routes.*
+"]
+}
