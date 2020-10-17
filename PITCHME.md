@@ -20,6 +20,12 @@
 +++
 @plantuml[drop=center, pad=30px, width=1000px](puml/graphviz.puml)
 +++
+## Editors
+* xdot
+* Atom
+* VS Code
+* Graphviz Online
++++
 @plantuml[drop=center, pad=30px, width=1000px](puml/practical.puml)
 ---
 ## Benefits of Source Code
@@ -39,13 +45,8 @@
 ## Pipeline tools
 * grep
 * awk
+* sed
 * groovy
----
-## Editors
-* xdot
-* Atom
-* VS Code
-* Graphviz Online
 ---
 ## [Dot language](https://graphviz.org/doc/info/lang.html)
 * graphs
@@ -94,7 +95,10 @@
 ## Embedded links
 @plantuml[drop=center, pad=30px, width=1000px](puml/links.puml)
 ---
-## API
+## Escape Hatches
+* SVG
+* HTML
+* API
 ---
 ## Online
 * http://viz-js.com/

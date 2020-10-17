@@ -1,0 +1,6 @@
+digraph G {
+"
+Digraph: a directed graph.
+That is a graph where each edge has a direction.
+" [shape=none fontsize=20]
+}

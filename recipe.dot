@@ -16,7 +16,6 @@ subgraph cluster_6 {
   box -> vinegar
 }
 
-
 "S&P 1" -> "rubbed pork"
 "S&P 3" -> "mashed potatos"
 "S&P 4" -> "slaw bowl"
@@ -49,7 +48,7 @@ subgraph cluster_5 {
   potatos -> "diced potatos"
 }
 
-subgraph cluster_0 {˝
+subgraph cluster_0 {
   label = "pork (20 minutes)"
   style=filled
   color=tan

@@ -1,0 +1,11 @@
+graph {
+
+  vertex -- "node" [label="edge"]
+  vertex -- point [label="line"]
+  point -- "node"
+
+  "
+  Graph: a collection of vertexes (also called nodes or points)
+   connected by lines or edges.
+  " [shape=none fontsize=20]
+}
