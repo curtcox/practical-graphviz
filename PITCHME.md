@@ -103,8 +103,11 @@
 +++
 @plantuml[drop=center, width=1700px](puml/recipe.puml)
 ---
-## Embedded links
+## Embedded Links
 @plantuml[drop=center, pad=30px, width=1000px](puml/links.puml)
++++
+![Embedded Links](./svg/links.svg)
+<img src="./svg/links.svg">
 ---
 ## Escape Hatches
 * SVG
