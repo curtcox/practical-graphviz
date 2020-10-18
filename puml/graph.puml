@@ -1,5 +1,5 @@
 @startuml
-graph {
+graph G {
 
   vertex -- "node" [label="edge"]
   vertex -- point [label="line"]
