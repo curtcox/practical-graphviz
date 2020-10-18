@@ -8,22 +8,22 @@
 * Tech
 ---
 ## Org Chart
-@plantuml[drop=left, pad=30px, width=1000px](puml/org.puml)
+![](./svg/org.svg)
 ---
-@plantuml[drop=center, pad=30px, width=1000px](puml/family.puml)
+![](./svg/family.svg)
 ---
 # Tech
-@plantuml[drop=center, pad=30px, width=1000px](puml/tech.puml)
+![](./svg/tech.svg)
 ---
 ## Practical Graphviz?
 * Graphviz
 * Practical
 ---
-@plantuml[drop=center, pad=30px, width=1000px](puml/graphviz.puml)
+![](./svg/graphviz.svg)
 ---
-@plantuml[drop=center, pad=30px, width=1000px](puml/graph.puml)
+![](./svg/graph.svg)
 ---
-@plantuml[drop=center, pad=30px, width=1000px](puml/digraph.puml)
+![](./svg/digraph.svg)
 
 ---
 ## Editors
@@ -37,7 +37,7 @@
 * [Graphviz Online](https://dreampuf.github.io/GraphvizOnline)
 
 ---
-@plantuml[drop=center, pad=30px, width=1000px](puml/practical.puml)
+![](./svg/practical.svg)
 ---
 ## Benefits of Source Code
 * Source Control
@@ -51,7 +51,7 @@
 * Existing tool
 * tree -> pipeline -> editor -> graphviz -> output
 ---
-@plantuml[drop=center, pad=30px, width=1500px](puml/workflow.puml)
+![](./svg/workflow.svg)
 ---
 ## Pipeline tools
 * grep
@@ -67,11 +67,11 @@
 * labels
 * colors
 ---
-@plantuml[drop=center, pad=30px, width=1000px](puml/color.puml)
+![](./svg/color.svg)
 ---
-@plantuml[drop=center, pad=30px, width=1000px](puml/shapes.puml)
+![](./svg/shapes.svg)
 ---
-@plantuml[drop=center, pad=30px, width=1000px](puml/arrows.puml)
+![](./svg/arrows.svg)
 ---
 ## Output formats
 * PNG
@@ -95,17 +95,17 @@
 * [Meraki Web Gateway](https://github.com/curtcox/Meraki-Web-Gateway)
 * Recipe
 ---
-@plantuml[drop=center, pad=30px, width=1800px](puml/pipeline.puml)
+![](./svg/pipeline.svg)
 ---
-@plantuml[drop=center, pad=30px, width=1500px](puml/packages.puml)
+![](./svg/packages.svg)
 ---
-@plantuml[drop=center, pad=30px, width=1500px](puml/gateway.puml)
+![](./svg/gateway.svg)
 ---
-@plantuml[drop=center, width=1700px](puml/recipe.puml)
+![](./svg/recipe.svg)
 ---
 ## Embedded Links
 
-@plantuml[drop=center, pad=30px, width=1000px](puml/links.puml)
+![](./svg/links.svg)
 
 ---
 
