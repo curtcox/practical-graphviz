@@ -13,6 +13,7 @@
 @plantuml[drop=center, pad=30px, width=1000px](puml/family.puml)
 +++
 # Tech
+@plantuml[drop=center, pad=30px, width=1000px](puml/tech.puml)
 ---
 ## Practical Graphviz?
 * Graphviz
@@ -20,11 +21,21 @@
 +++
 @plantuml[drop=center, pad=30px, width=1000px](puml/graphviz.puml)
 +++
+@plantuml[drop=center, pad=30px, width=1000px](puml/graph.puml)
++++
+@plantuml[drop=center, pad=30px, width=1000px](puml/digraph.puml)
+
++++
 ## Editors
 * xdot
 * Atom
-* VS Code
-* Graphviz Online
+  - [graphviz-preview-plus](https://atom.io/packages/graphviz-preview-plus)
+  - invoke via ctrl-shift-G
+* Visual Studio Code
+  - [graphviz-preview](https://marketplace.visualstudio.com/items?itemName=EFanZh.graphviz-preview)
+  - invoke via Ctrl + Shift + P Graphviz
+* [Graphviz Online](https://dreampuf.github.io/GraphvizOnline)
+
 +++
 @plantuml[drop=center, pad=30px, width=1000px](puml/practical.puml)
 ---

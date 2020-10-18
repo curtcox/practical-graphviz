@@ -1,0 +1,10 @@
+digraph G {
+Java -> "C#" -> Java
+Java -> "Objective C" -> Swift -> Java 
+Java -> Groovy
+JavaScript -> Groovy
+Groovy -> JavaScript -> Go
+Go -> TypeScript -> "C#" -> Scala
+
+  "Languages" [shape=none fontsize=20]
+}
