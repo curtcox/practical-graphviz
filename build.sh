@@ -1,3 +1,7 @@
+# Build README from PITCHME
+cat PITCHME.md | sed 's/+++/---/' > README.md 
+
+# Compile dot -> puml, SVG, and PNG
 rm  puml/*
 for f in *.dot; do
   base=`echo "$f" | cut -d'.' -f1`
