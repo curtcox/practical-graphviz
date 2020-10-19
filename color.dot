@@ -2,7 +2,10 @@ digraph G {
 
  rankdir=LR
 
- title[label="https://graphviz.org/doc/info/colors.html" shape=none]
+ title[ shape=none
+ label="https://graphviz.org/doc/info/colors.html"
+ URL="https://graphviz.org/doc/info/colors.html"
+]
 
 default
 "[color=red]" [color=red]

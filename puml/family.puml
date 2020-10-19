@@ -46,7 +46,8 @@ edge[arrowhead="none"]
   "my wife" -> "my wife's brother"
   "my wife" -> "my wife's sister"
 
-  "A different family tree" [shape=none URL="https://graphviz.org/Gallery/directed/kennedyanc.html"]
+  "A different family tree" [shape=none
+   URL="https://graphviz.org/Gallery/directed/kennedyanc.html"]
   "My\n nuclear family\n relationships" [fontsize=20 shape=none]
 
 }

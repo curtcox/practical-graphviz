@@ -12,7 +12,10 @@
 <!-- imports -->
 <g id="node1" class="node">
 <title>imports</title>
+<g id="a_node1"><a xlink:href="https://explainshell.com/explain?cmd=grep+-riI+import+." xlink:title="grep &#45;riI import .">
 <text text-anchor="middle" x="316.08" y="-198" font-family="Times,serif" font-size="30.00">grep &#45;riI import .</text>
+</a>
+</g>
 </g>
 <!-- no_tests -->
 <g id="node2" class="node">
@@ -28,7 +31,10 @@
 <!-- no_folder -->
 <g id="node3" class="node">
 <title>no_folder</title>
+<g id="a_node3"><a xlink:href="https://explainshell.com/explain?cmd=sed+%27s%7C.%2Fgroovy%2F%7C%7C%27" xlink:title="sed &#39;s|./groovy/||&#39;">
 <text text-anchor="middle" x="822.58" y="-254" font-family="Times,serif" font-size="30.00">sed &#39;s|./groovy/||&#39;</text>
+</a>
+</g>
 </g>
 <!-- no_tests&#45;&gt;no_folder -->
 <g id="edge2" class="edge">

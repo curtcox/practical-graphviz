@@ -4,9 +4,12 @@ rankdir=LR
 #grep -riI import . | grep -v "[T|t]est"  | sed 's|./groovy/||' | sed 's/.groovy:import / -> /'
 imports -> no_tests -> no_folder -> arrow
 
-imports  [fontsize=30 shape=none label="grep -riI import ."]
+imports  [fontsize=30 shape=none
+label="grep -riI import ."
+URL="https://explainshell.com/explain?cmd=grep+-riI+import+."]
 no_tests [fontsize=30 shape=none label="grep -v \"[T|t]est\""]
-no_folder[fontsize=30 shape=none label="sed 's|./groovy/||'"]
+no_folder[fontsize=30 shape=none label="sed 's|./groovy/||'"
+URL="https://explainshell.com/explain?cmd=sed+%27s%7C.%2Fgroovy%2F%7C%7C%27"]
 arrow    [fontsize=30 shape=none label="sed 's/.groovy:import / -> /'"]
 
 "all import statements"  -> imports

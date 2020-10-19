@@ -1,7 +1,25 @@
 @startuml
 digraph G {
  rankdir=LR
+
+
+"When a Stranger Calls: Sanitizing SVGs" [
+shape=none
+URL="https://blobfolio.com/2017/03/when-a-stranger-calls-sanitizing-svgs/
+"
+]
+
+"Embedding links is easy, but often doesn't work.
+The link will only survive when a graph is rendered as SVG.
+Even then, risks associated with SVGs often result in the
+link being disabled.
+
+Try opening just this image in a new tab or window.
+" [shape=none]
+
 "[URL=\"http://www.google.com/\"]" [URL="http://www.google.com/"]
+
 "Embedded Links"[shape=none fontsize=40]
+
 }
 @enduml

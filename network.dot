@@ -1,3 +1,21 @@
-graph G {
-    
+digraph G {
+    modem -> router
+    wired_router -> switch1
+    wifi_router -> homeplug
+    wifi_router -> livingroom_airport
+    wifi_router -> diningroom_airport
+    homeplug -> upstairs_airport_1
+    homeplug -> upstairs_airport_2
+
+  subgraph cluster_wired {
+
+  }
+
+  subgraph cluster_wifi {
+    livingroom_airport
+    diningroom_airport
+    upstairs_airport_1
+    upstairs_airport_2
+  }
+
 }

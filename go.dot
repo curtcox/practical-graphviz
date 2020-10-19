@@ -1,0 +1,28 @@
+digraph G {
+
+source -> go -> graphviz -> dependencies
+
+ "Transitive import graph of Go’s regexp package."
+ [
+ shape=none
+ URL="https://graphviz.org/Gallery/directed/go-package.html"
+ ]
+
+ go [
+ shape=box
+ style=filled
+ color=cyan
+ label="graph.go
+(very small go program)"
+ URL="https://github.com/golang/gddo/blob/721e228c7686d830b5decc691a4dc7e6a6e94888/gddo-server/graph.go#L34"]
+
+ source [label="Go’s regexp package source"]
+
+ dependencies [
+   label="Dependency Graph"
+   style=filled
+   color=yellow
+   shape=star
+   URL="https://graphviz.org/Gallery/directed/go-package.svg"
+ ]
+}

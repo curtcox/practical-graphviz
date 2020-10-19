@@ -1,6 +1,8 @@
 # Practical Graphviz
 ---
 # Questions?
+* You are not alone
+* Other people will have the same questions
 ---
 ## Who is this guy?
 * Org chart
@@ -12,7 +14,6 @@
 ---
 ![](./svg/family.svg)
 ---
-# Tech
 ![](./svg/tech.svg)
 ---
 ## Practical Graphviz?
@@ -24,7 +25,8 @@
 ![](./svg/graph.svg)
 ---
 ![](./svg/digraph.svg)
-
+---
+![](./svg/whiteboard.svg)
 ---
 ## Editors
 * xdot
@@ -43,11 +45,10 @@
 * Source Control
 * Easier Merges
 * Email
-* Pipeline
+* Pipeline (plays well with tools that process text)
 ---
 ## Workflows
 * Whiteboard
-* Adhoc online
 * Existing tool
 * tree -> pipeline -> editor -> graphviz -> output
 ---
@@ -58,6 +59,12 @@
 * awk
 * sed
 * groovy
+---
+grep
+---
+sed
+---
+groovy
 ---
 ## [Dot language](https://graphviz.org/doc/info/lang.html)
 * graphs
@@ -73,23 +80,21 @@
 ---
 ![](./svg/arrows.svg)
 ---
-## Output formats
-* PNG
-* PDF
-* SVG
+![](./svg/subgraph.svg)
 ---
 ## Language Examples
-* Scala
-* Dart
 * [Go](https://graphviz.org/Gallery/directed/go-package.html)
+* Objective C
+* Dart
 * C#
 * Java
 * [Groovy](https://dreampuf.github.io/GraphvizOnline/?url=https://raw.githubusercontent.com/curtcox/Meraki-Web-Gateway/master/architecture/gateway.dot)
-* Objective C
 ---
-## Repo Examples
-* Scala
-* Cocoapods
+![](./svg/go.svg)
+---
+![](./png/objectivec.png)
+---
+@code[](dart_structure.sh)
 ---
 ## Examples
 * [Meraki Web Gateway](https://github.com/curtcox/Meraki-Web-Gateway)
@@ -101,22 +106,36 @@
 ---
 ![](./svg/gateway.svg)
 ---
+Visual Structural Analysis
+---
+## Repo Examples
+* Maven
+* Scala / SBT [sbt-dependency-graph](https://github.com/sbt/sbt-dependency-graph)
+* Cocoapods
+---
+* sbt-dependency-graph
+  - addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.10.0-RC1")
+  - dependencyDot: Generates a .dot file with the project's dependencies
+  - Use graphviz to render it to your preferred graphic format
+---
+![](./svg/network.svg)
+---
 ![](./svg/recipe.svg)
 ---
 ## Embedded Links
-
 ![](./svg/links.svg)
-
 ---
-
-![Embedded Links](./svg/links.svg)
-<img src="./svg/links.svg">
-
+## Output formats
+* PNG
+* PDF
+* SVG
 ---
 ## Escape Hatches
 * SVG
 * HTML
 * API
+  - easy access to coordinates
+  - several tools use Graphviz as a layout engine
 ---
 ## Online
 * http://viz-js.com/
@@ -133,7 +152,7 @@
 ## Also
 * [Mermaid](https://mermaid-js.github.io/mermaid/#/)
 * [Live Editor](https://mermaid-js.github.io/mermaid-live-editor)
-* Mermaid vs Graphviz
+* Mermaid vs Graphviz (that's another talk)
 ---
 # Questions
 ---

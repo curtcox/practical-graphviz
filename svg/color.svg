@@ -12,7 +12,10 @@
 <!-- title -->
 <g id="node1" class="node">
 <title>title</title>
+<g id="a_node1"><a xlink:href="https://graphviz.org/doc/info/colors.html" xlink:title="https://graphviz.org/doc/info/colors.html">
 <text text-anchor="middle" x="119" y="-14.3" font-family="Times,serif" font-size="14.00">https://graphviz.org/doc/info/colors.html</text>
+</a>
+</g>
 </g>
 <!-- default -->
 <g id="node2" class="node">
