@@ -1,21 +1,51 @@
 digraph G {
-    modem -> router
-    wired_router -> switch1
-    wifi_router -> homeplug
-    wifi_router -> livingroom_airport
-    wifi_router -> diningroom_airport
-    homeplug -> upstairs_airport_1
-    homeplug -> upstairs_airport_2
 
-  subgraph cluster_wired {
+"Wired Network Diagram" [shape=none fontsize=20]
 
-  }
+modem -> { "diagnostic cable" , "edge router" }
+"edge router" -> { "wired router", "wifi router"}
 
-  subgraph cluster_wifi {
-    livingroom_airport
-    diningroom_airport
-    upstairs_airport_1
-    upstairs_airport_2
-  }
+subgraph cluster_wired {
+"wired router" -> "wired switch 1" [color=red]
+"wired router" -> "wired switch 2" [color=green]
+
+"wired switch 1" -> {"breaker box","wired fing box"}
+"wired switch 1" -> "hallway canary" [color=gray]
+"wired switch 1" -> "printer switch" [color=blue]
+"wired switch 1" -> "linux switch" -> {"linux nuc", "rotating linux"}
+
+"wired switch 2" -> {"2008 MacPro", "2012 MacPro", "Sun Ultra 40"}
+"wired switch 2" -> "wired switch 3" [color=blue]
+"wired switch 3" -> {"mac mini", "rotating slots" }
+
+"printer switch" -> {
+ "WWT laptop", "Client Laptop", "Basement Chromebook",
+  "Printer 1", "Printer 2"}
+}
+
+subgraph cluster_wifi {
+"wifi router" -> { "wifi fing box",  "wifi switch 1", "wifi switch 2"}
+
+"wifi switch 1" -> homeplug [color=gray]
+"wifi switch 1" -> "sub livinging room switch"
+
+"wifi switch 2" -> {"wifi debug laptop" ,"dining room switch"}
+"dining room switch" -> {"Dining room Chromebook","VoIP phone","dining room airport"}
+"dining room airport" -> {"dining room canary 1","nest mini","dining room desk switch"}
+"dining room desk switch" -> {"dining room canary 2","dining room desk laptop(s)"}
+
+"sub livinging room switch" -> {"living room airport" , "living room switch"}
+"living room switch" -> {FireTV, AppleTV, Roku, "Windwos 10"}
+
+"upstairs office airport" -> "upstairs office laptop"
+"upstairs bedroom airport" -> {
+ "upstairs bedroom Chromebook", "FireTV DVR", "Hue Hub"
+}
+
+homeplug -> {
+"upstairs office airport", "upstairs bedroom airport", "kitchen canary"
+}
+
+}
 
 }
