@@ -94,7 +94,11 @@ groovy
 ---
 ![](./png/objectivec.png)
 ---
-@code[](dart_structure.sh)
+# Visual Structural Analysis
+* High level structures can be identified
+* Using them can clarify and simplify
+---
+@code[bash](dart_structure.sh)
 ---
 ## Examples
 * [Meraki Web Gateway](https://github.com/curtcox/Meraki-Web-Gateway)
@@ -105,8 +109,6 @@ groovy
 ![](./svg/packages.svg)
 ---
 ![](./svg/gateway.svg)
----
-Visual Structural Analysis
 ---
 ## Repo Examples
 * Maven
