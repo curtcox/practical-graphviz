@@ -1,6 +1,6 @@
 digraph G {
 "
-Digraph: a directed graph.
-That is a graph where each edge has a direction.
+subgraph: used for grouping.
+Can be nested.
 " [shape=none fontsize=20]
 }
