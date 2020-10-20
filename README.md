@@ -97,7 +97,7 @@
 ---
 ![](./png/objectivec.png)
 ---
-# Visual Structural Analysis
+## Visual Structural Analysis
 * High level structures can be identified
 * Using them can clarify and simplify
 ---
@@ -118,20 +118,21 @@
 * Scala / SBT [sbt-dependency-graph](https://github.com/sbt/sbt-dependency-graph)
 * Cocoapods
 ---
-* sbt-dependency-graph
-  - addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.10.0-RC1")
-  - dependencyDot: Generates a .dot file with the project's dependencies
-  - Use graphviz to render it to your preferred graphic format
+## sbt-dependency-graph
+* addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.10.0-RC1")
+* dependencyDot: Generates a .dot file with the project's dependencies
+* Use graphviz to render it to your preferred graphic format
 ---
 ![](./svg/network.svg)
 ---
 ![](./svg/recipe.svg)
 ---
-# Where does it go?
-* Graphviz files are easily used as one more step.
+## Where does it go?
+* Graphviz files are easily used as one more pipeline step.
 * Where does the cable go?
 * Where does the ingredient go?
 * Where does the library go?
+* grep can tell you
 ---
 ---
 ## Embedded Links
@@ -144,10 +145,13 @@
 ---
 ## Escape Hatches
 * SVG
-* HTML
-* API
+* [HTML](http://graphviz.org/doc/info/shapes.html#html)
+* [API](https://graphviz.readthedocs.io/en/stable/api.html)
   - easy access to coordinates
   - several tools use Graphviz as a layout engine
+---
+# HTML
+![](./svg/html.svg)
 ---
 ## Online
 * http://viz-js.com/

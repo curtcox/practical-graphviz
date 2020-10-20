@@ -1,14 +1,14 @@
 @startuml
 digraph G {
 
-Java -> "C#" -> Java
+Java -> "C#" -> {Java, "Objective C"}
 Java -> "Objective C" -> Swift -> Java
 Java -> Groovy
 JavaScript -> Groovy
 Groovy -> JavaScript -> Go
 Go -> TypeScript -> "C#" -> Scala
 
-  "Languages" [shape=none fontsize=20]
+  "My Recent Primary Languages" [shape=none fontsize=20]
 }
 
 @enduml

@@ -13,7 +13,10 @@
 <!-- title -->
 <g id="node1" class="node">
 <title>title</title>
-<text text-anchor="middle" x="118" y="-37.3" font-family="Times,serif" font-size="14.00">http://graphviz.org/doc/info/shapes.html</text>
+<g id="a_node1"><a xlink:href="http://graphviz.org/doc/info/shapes.html" xlink:title="http://graphviz.org/doc/info/shapes.html">
+<text text-anchor="middle" x="118" y="-37.3" font-family="Times,serif" font-size="14.00" fill="blue">http://graphviz.org/doc/info/shapes.html</text>
+</a>
+</g>
 </g>
 <!-- box -->
 <g id="node2" class="node">

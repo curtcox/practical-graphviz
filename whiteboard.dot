@@ -2,7 +2,7 @@ digraph G {
 
 # Which way does sync go?
 Hana -> Sync -> Kafka
-#Kafka-> materials -> Hana
+#Kafka-> Sync -> Hana
 
 # It's clearer to me left to right
 rankdir=LR
@@ -14,28 +14,20 @@ Hana [shape=cylinder]
 Sync [shape = box]
 
 # Sync, does that, but Oracle is the preferred database, now
-Hana [style=filled color=gray]
-Oracle [shape=cylinder]
+Hana [style=filled color=gray] Oracle [shape=cylinder]
 
 # Also, the Oracle connection is a critical read/write connection.
 Oracle -> Sync [dir=both color=red label=critical]
 
 # And Kafka is hosted offsite in AWS
-subgraph cluster_AWS {
- label = "AWS"
- style=filled
- color=tan
- fontsize=30
- Kafka
-}
+subgraph cluster_AWS { label = "AWS" style=filled color=tan fontsize=30 Kafka }
 
 # Actually, the details of Sync are configured by Vault
-Vault[shape=box3d]
-Vault -> Sync [taillabel=config style=dotted]
+Vault[shape=box3d] Vault -> Sync [taillabel=config style=dotted]
 
 # We should give this a title
 "Sync Flow"[shape=none fontsize=40]
 
 # Can you email this to me?
-# https://dreampuf.github.io/GraphvizOnline/#digraph%20G%20%7B%0A%0AHana%20-%3E%20Sync%20-%3E%20Kafka%0Arankdir%3DLR%0A%0AHana%20%5Bshape%3Dcylinder%5D%0A%0ASync%20%5Bshape%20%3D%20box%5D%0A%0AHana%20%5Bstyle%3Dfilled%20color%3Dgray%5D%0AOracle%20%5Bshape%3Dcylinder%5D%0AOracle%20-%3E%20Sync%20%5Bdir%3Dboth%20color%3Dred%5D%0A%0Asubgraph%20cluster_AWS%20%7B%0A%20label%20%3D%20%22AWS%22%0A%20style%3Dfilled%0A%20color%3Dtan%0A%20fontsize%3D30%0A%20Kafka%0A%7D%0A%0AVault%5Bshape%3Dbox3d%5D%0AVault%20-%3E%20Sync%20%5Blabel%3Dconfig%20style%3Ddotted%5D%0A%0A%22Sync%20Flow%22%5Bshape%3Dnone%20fontsize%3D40%5D%0A%0A%7D%0A
+URL[shape=none URL="https://dreampuf.github.io/GraphvizOnline/?url=https://raw.githubusercontent.com/curtcox/practical-graphviz/master/whiteboard.dot"]
 }

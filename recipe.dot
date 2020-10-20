@@ -2,53 +2,49 @@ digraph G {
 
 rankdir=LR
 
-subgraph cluster_6 {
+subgraph cluster_unbox {
   label = "unbox"
-  style="invis"
-  box -> potatos
-  box -> scallions
-  box -> carrots
-  box -> apple
-  box -> pork
-  box -> "C&P"
-  box -> jam
-  box -> mayonnaise
-  box -> vinegar
+  style = "invis"
+  box -> {
+    apple, pork, jam, mayonnaise, vinegar
+  }
+  box -> carrots   [color=orange]
+  box -> scallions [color=green]
+  box -> "C&P"     [color=red]
+  box -> potatos   [color=brown]
+  box -> pork      [color=brown]
 }
 
-"S&P 1" -> "rubbed pork"
-"S&P 3" -> "mashed potatos"
-"S&P 4" -> "slaw bowl"
-"S&P 2" -> "microwaved sauce"
+"S&P 1" -> "rubbed pork"      [style=dashed]
+"S&P 3" -> "mashed potatos"   [style=dashed]
+"S&P 4" -> "slaw bowl"        [style=dashed]
+"S&P 2" -> "microwaved sauce" [style=dashed]
 
-"C&P" -> "1/4 tsp C&P"
-"C&P" -> "remaining C&P"
-vinegar -> "4 tsp vinegar"
-vinegar -> "remaining vinegar"
-"1/4 tsp C&P" -> "rubbed pork"
-pork -> "rubbed pork"
-oil -> "rubbed pork"
+"C&P"   -> {"1/4 tsp C&P", "remaining C&P"} [color=red]
+vinegar -> { "4 tsp vinegar", "remaining vinegar" }
+"1/4 tsp C&P"  -> "rubbed pork" [color=red]
+pork           -> "rubbed pork" [color=brown]
+oil            -> "rubbed pork"
 
 mayonnaise -> "slaw bowl"
 
-water -> "pot of water"
-salt -> "pot of water"
+{ water, salt } -> "pot of water"
 
 "2Tbsp butter" -> "mashed potatos"
 "1Tbsp butter" -> "microwaved sauce"
 
-subgraph cluster_5 {
+subgraph cluster_chop {
   label = "chop"
   style=filled
   color=tan
   node [style=filled,color=white]
-  scallions -> "sliced scallions"
-  carrots -> "grated carrots"
-  apple -> "sliced apple"
-  potatos -> "diced potatos"
+  scallions -> "sliced scallions" [color=green]
+  carrots   -> "grated carrots"   [color=orange]
+  apple     -> "sliced apple"
+  potatos   -> "diced potatos"    [color=brown]
 }
 
-subgraph cluster_0 {
+subgraph cluster_oven {
   label = "pork (20 minutes)"
   style=filled
   color=tan
@@ -57,86 +53,100 @@ subgraph cluster_0 {
   "rubbed pork" -> "baking sheet" -> "450°F oven" -> "18-20 minutes" -> "roasted pork" -> "sliced pork"
 }
 
-subgraph cluster_1 {
+subgraph cluster_bowl {
   label = "slaw"
   style=filled
   color=pink
   node [style=filled,color=white]
-  "sliced apple" -> "slaw bowl"
-  "sliced scallions" -> "slaw bowl"
-  "grated carrots" -> "slaw bowl"
-  "4 tsp vinegar" -> "slaw bowl"
-  "slaw bowl" -> slaw
+  "sliced apple"     -> "slaw bowl"
+  "sliced scallions" -> "slaw bowl" [color=green]
+  "grated carrots"   -> "slaw bowl" [color=orange]
+  "4 tsp vinegar"    -> "slaw bowl"
+  "slaw bowl"        -> slaw
 }
 
-subgraph cluster_2 {
+subgraph cluster_pot {
   label = "mashed potatos (25 minutes)"
   style=filled
   color=lightgray
   fontsize=30
   node [style=filled,color=white]
   "diced potatos" ->"pot of water" -> "bring to boil" -> "15-20 minutes" -> drain -> mash -> "mashed potatos"
-  "sliced scallions" -> "mashed potatos"
+  "sliced scallions" -> "mashed potatos" [color=green]
 }
 
-subgraph cluster_3 {
+subgraph cluster_sauce_bowl {
   label = "sauce (1 minute)"
   style=filled
   color=pink
   fontsize=30
   node [style=filled,color=white]
-  "remaining vinegar" -> "sauce bowl"
-  "remaining C&P"-> "sauce bowl"
+  {"remaining vinegar", "remaining C&P"} -> "sauce bowl"
   jam -> "sauce bowl" -> microwave -> "45 seconds" -> "microwaved sauce"
 }
 
-subgraph cluster_4 {
+subgraph cluster_plate {
   style=invis
-  "mashed potatos" -> plate
-  "microwaved sauce" -> plate
-  "sliced pork" -> plate
-  slaw -> plate
+  {"mashed potatos", "microwaved sauce", "sliced pork", slaw } -> plate
 }
 
 
+box [shape=box style=filled fillcolor=tan]
+
 apple [style=filled fillcolor=red]
 "sliced apple" [style=filled fillcolor=red]
-box [shape=box style=filled fillcolor=tan]
-"450°F oven" [shape=box]
-microwave [shape=box]
+
 mash [shape=star]
 "baking sheet" [shape=box style=filled fillcolor=gray]
-plate [shape=doublecircle]
-"pot of water" [shape=cylinder style=filled fillcolor=gray]
+
+"pot of water"   [shape=cylinder style=filled fillcolor=gray]
 "mashed potatos" [shape=cylinder style=filled fillcolor=gray]
-"slaw bowl" [shape=invtrapezium style=filled fillcolor=orange]
-"sauce bowl" [shape=invtrapezium style=filled fillcolor=red]
-"microwaved sauce" [shape=invtrapezium style=filled fillcolor=red]
-scallions [style=filled fillcolor=darkgreen]
+
+"slaw bowl"        [shape=invtrapezium style=filled fillcolor=orange]
+"sauce bowl"       [shape=invtrapezium style=filled fillcolor=orange]
+"microwaved sauce" [shape=invtrapezium style=filled fillcolor=orange]
+
+scallions          [style=filled fillcolor=darkgreen]
 "sliced scallions" [style=filled fillcolor=darkgreen]
-carrots [style=filled fillcolor=orange]
+
+slaw             [style=filled fillcolor=orange]
 "grated carrots" [style=filled fillcolor=orange]
-"slaw" [style=filled fillcolor=orange]
+carrots          [style=filled fillcolor=orange]
+
 "1Tbsp butter" [shape=box style=filled fillcolor=yellow]
 "2Tbsp butter" [shape=box style=filled fillcolor=yellow]
-pork [style=filled fillcolor=brown]
-"rubbed pork" [style=filled fillcolor=brown]
-"roasted pork" [style=filled fillcolor=brown]
-"sliced pork" [style=filled fillcolor=brown]
-potatos [style=filled fillcolor=brown]
+
+"pork"          [style=filled fillcolor=brown]
+"potatos"       [style=filled fillcolor=brown]
 "diced potatos" [style=filled fillcolor=brown]
-water [style=filled fillcolor=lightblue]
-jam [shape=cylinder style=filled fillcolor=red]
+"rubbed pork"   [style=filled fillcolor=brown]
+"roasted pork"  [style=filled fillcolor=brown]
+"sliced pork"   [style=filled fillcolor=brown]
+
+water   [style=filled fillcolor=lightblue]
+jam     [shape=cylinder style=filled fillcolor=red]
 vinegar [shape=cylinder]
-"4 tsp vinegar" [shape=cylinder style=filled fillcolor=white]
+
+"4 tsp vinegar"     [shape=cylinder style=filled fillcolor=white]
 "remaining vinegar" [shape=cylinder style=filled fillcolor=white]
-"C&P" [style=filled shape=trapezium fillcolor=brown]
+
+"C&P"           [style=filled shape=trapezium fillcolor=brown]
 "remaining C&P" [style=filled shape=trapezium fillcolor=brown]
-"1/4 tsp C&P" [style=filled shape=trapezium fillcolor=brown]
+"1/4 tsp C&P"   [style=filled shape=trapezium fillcolor=brown]
+
+salt [shape=trapezium]
 "S&P 1" [shape=trapezium style=filled fillcolor=gray]
 "S&P 2" [shape=trapezium style=filled fillcolor=gray]
 "S&P 3" [shape=trapezium style=filled fillcolor=gray]
 "S&P 4" [shape=trapezium style=filled fillcolor=gray]
-salt [shape=trapezium]
+
+"45 seconds"    [shape=egg] # egg timer
+"18-20 minutes" [shape=egg] # easter egg
+"15-20 minutes" [shape=egg] #dadjoke
+
+microwave   [shape=box]
+"450°F oven"[shape=box]
+
+plate [shape=doublecircle]
 
 }

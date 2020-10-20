@@ -1,7 +1,11 @@
 @startuml
 digraph G {
 
-  { e, n, a } -> groovy
+  #rankdir=LR
+
+  { e, n, a } -> groovy ->
+     "Stuff you are looking for --
+     maybe with changes."
   also -> e
 
   n [shape=box label="
@@ -20,8 +24,10 @@ digraph G {
   "]
 
   also [shape=none label="
-  Many langauges allow you to use -e to specify a small program as a literal.
-  awk, scala, jrunscript, python, perl, no, ruby,  ..."]
+  Many langauges allow you to use -e
+  to specify a small program as a literal.
+  awk, scala, jrunscript, python, perl,
+  node, ruby,  ..."]
 }
 
 @enduml

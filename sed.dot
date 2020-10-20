@@ -1,3 +1,15 @@
 digraph G {
-  sed
+  rankdir=LR
+  sed -> q1-> s -> d1 -> find -> d2 -> replace ->d3 -> g -> q2 [style=invis]
+
+  sed [shape=none]
+  q1 [shape=none label="\""]
+  q2 [shape=none label="\""]
+  s [shape=none]
+  d1 [shape=none label="/"]
+  d2 [shape=none label="/"]
+  d3 [shape=none label="/"]
+  g [shape=none]
+  find [shape=none]
+  replace [shape=none]
 }

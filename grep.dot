@@ -1,3 +1,31 @@
 digraph G {
-  grep
+
+rankdir=LR
+
+{ r, i, I, v, "color" } -> grep -> "stuff you are looking for"
+
+r [shape=box label="
+-r
+Recursively search the directory.
+"]
+
+i [shape=box label="
+-i
+Ignore case differences.
+"]
+
+I [shape=box label="
+-I
+Ignore binary files.
+"]
+
+v [shape=box label="
+-v
+Reverse : exclude matches.
+"]
+
+color [shape=box label="
+--color
+Highlight matches : useful for visual scanning."]
+
 }

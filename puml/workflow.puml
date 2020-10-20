@@ -2,7 +2,6 @@
 digraph G {
 
 rankdir=LR
-"Workflow"[shape=none fontsize=40]
 
 files -> pipeline -> editor -> graphviz -> output [color=blue arrowsize=4 arrowhead=vee]
 
@@ -10,34 +9,10 @@ before [shape=none label=""]
 after [shape=none label=""]
 before->after [label="and then" fontsize=30 color=blue arrowsize=4 arrowhead=vee]
 
-files [shape=none fontsize=30]
-pipeline [shape=none fontsize=30]
-graphviz [shape=none fontsize=30]
-editor [shape=none fontsize=30]
-output [shape=none fontsize=30]
-
-"C#" -> files
-"Scala" -> files
-"Dart" -> files
-"Go" -> files
-"Java" -> files
-"Groovy" -> files
-"Objective C" -> files
-
- grep-> pipeline
- awk-> pipeline
- groovy-> pipeline
-
- vi->editor
- Atom->editor
- VSCode->editor
- online->editor
- xdot->editor
- IntelliJ->editor
-
- PDF->output
- PNG->output
- SVG->output
+{ "C#" Scala, Dart, Go, Java, Groovy, "Objective C"} -> files
+{ grep, sed, awk, groovy} -> pipeline
+{ vi, Atom, VSCode, online, xdot, IntelliJ } ->editor
+{ PDF, PNG, SVG } -> output
 
  member [shape=none label=""]
  set [shape=none label=""]
@@ -52,13 +27,16 @@ output [shape=none fontsize=30]
    "Java" [shape=none]
    "Groovy" [shape=none]
    "Objective C" [shape=none]
+   files [shape=folder fontsize=30]
  }
 
  subgraph cluster_pipeline {
    style="invis"
    grep [shape=none]
     awk [shape=none]
+    sed [shape=none]
    groovy [shape=none]
+   pipeline [shape=rarrow fontsize=30]
  }
 
 subgraph cluster_editor {
@@ -69,6 +47,7 @@ subgraph cluster_editor {
  vi       [shape=none]
  online   [shape=none]
  xdot     [shape=none]
+ editor   [shape=box fontsize=30]
 }
 
  subgraph cluster_output {
@@ -76,10 +55,16 @@ subgraph cluster_editor {
    PDF [shape=none]
    PNG [shape=none]
    SVG [shape=none]
+   output [shape=star style=filled color=yellow fontsize=30]
  }
 
  tldr -> graphviz
  tldr [shape=none fontsize=20 label="dot -Tpng -O path/to/file.dot"]
+ graphviz [fontsize=30 style=filled color=blue fontcolor=white]
+
+ "Typical Workflow
+ "[shape=none fontsize=40]
+
 }
 
 @enduml

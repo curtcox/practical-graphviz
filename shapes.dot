@@ -2,7 +2,10 @@ digraph G {
 
  rankdir=LR
 
- title[label="http://graphviz.org/doc/info/shapes.html" shape=none]
+ title[shape=none fontcolor=blue
+ label="http://graphviz.org/doc/info/shapes.html"
+ URL="http://graphviz.org/doc/info/shapes.html"
+ ]
 
  label = "[shape=?]"
  box          [shape=box]
