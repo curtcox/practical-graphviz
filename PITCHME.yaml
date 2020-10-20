@@ -6,7 +6,12 @@ published: true
 
 # Custom CSS Style Rules (Optional)
 #theme-override: assets/css/PITCHME.css
-
+background : png/WWTBackground.png
+#theme-headline : [ "family", "color", "transform", "emphasis", "scale", "line-height", "padding" ]
+theme-headline  : [ "Montserrat", "white", "none", "#E67E22", "100", "130", "15" ]
+theme-byline    : [ "Montserrat", "white", "none", "#E67E22", "100", "120", "15" ]
+theme-text      : [ "Ubuntu",     "white", "none", "#E67E22", "100", "110", "15" ]
+theme-links     : [ "#72ffff", "#72ffff" ]
 # Slide Deck Metadata
 title : "Practical Graphviz"
 description : "Practical Graphviz"
