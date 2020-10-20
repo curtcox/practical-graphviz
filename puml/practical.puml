@@ -9,4 +9,5 @@ digraph G {
  Maintainable -> Practical
  Text         -> Practical
 }
+
 @enduml

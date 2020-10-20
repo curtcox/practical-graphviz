@@ -56,15 +56,16 @@
 ---
 ## Pipeline tools
 * grep
-* awk
 * sed
-* groovy
+* all the standard command line tools
+* a language built for this stuff : awk, perl
+* a language that can be adapted to this : groovy
 ---
-grep
+![](./svg/grep.svg)
 ---
-sed
+![](./svg/sed.svg)
 ---
-groovy
+![](./svg/groovy.svg)
 ---
 ## [Dot language](https://graphviz.org/doc/info/lang.html)
 * graphs
@@ -89,6 +90,8 @@ groovy
 * C#
 * Java
 * [Groovy](https://dreampuf.github.io/GraphvizOnline/?url=https://raw.githubusercontent.com/curtcox/Meraki-Web-Gateway/master/architecture/gateway.dot)
+* TypeScript
+* Your favorite language, too
 ---
 ![](./svg/go.svg)
 ---
@@ -123,6 +126,13 @@ groovy
 ![](./svg/network.svg)
 ---
 ![](./svg/recipe.svg)
+---
+# Where does it go?
+* Graphviz files are easily used as one more step.
+* Where does the cable go?
+* Where does the ingredient go?
+* Where does the library go?
+---
 ---
 ## Embedded Links
 ![](./svg/links.svg)

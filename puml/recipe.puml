@@ -141,4 +141,5 @@ vinegar [shape=cylinder]
 salt [shape=trapezium]
 
 }
+
 @enduml

@@ -40,7 +40,7 @@
 
 +++
 @plantuml[drop=center, pad=30px, width=1000px](puml/practical.puml)
----
++++
 ## Benefits of Source Code
 * Source Control
 * Easier Merges
@@ -56,15 +56,16 @@
 ---
 ## Pipeline tools
 * grep
-* awk
 * sed
-* groovy
+* all the standard command line tools
+* a language built for this stuff : awk, perl
+* a language that can be adapted to this : groovy
 +++
-grep
+@plantuml[drop=center, pad=30px, width=1000px](puml/grep.puml)
 +++
-sed
+@plantuml[drop=center, pad=30px, width=1000px](puml/sed.puml)
 +++
-groovy
+@plantuml[drop=center, pad=30px, width=1000px](puml/groovy.puml)
 ---
 ## [Dot language](https://graphviz.org/doc/info/lang.html)
 * graphs
@@ -89,6 +90,8 @@ groovy
 * C#
 * Java
 * [Groovy](https://dreampuf.github.io/GraphvizOnline/?url=https://raw.githubusercontent.com/curtcox/Meraki-Web-Gateway/master/architecture/gateway.dot)
+* TypeScript
+* Your favorite language, too
 +++
 @plantuml[drop=center, pad=30px, width=1800px](puml/go.puml)
 +++
@@ -123,6 +126,13 @@ groovy
 @plantuml[drop=center, pad=30px, width=1500px](puml/network.puml)
 +++
 @plantuml[drop=center, width=1700px](puml/recipe.puml)
++++
+# Where does it go?
+* Graphviz files are easily used as one more step.
+* Where does the cable go?
+* Where does the ingredient go?
+* Where does the library go?
++++
 ---
 ## Embedded Links
 @plantuml[drop=center, pad=30px, width=1000px](puml/links.puml)

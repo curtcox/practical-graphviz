@@ -1,0 +1,27 @@
+@startuml
+digraph G {
+
+  { e, n, a } -> groovy
+  also -> e
+
+  n [shape=box label="
+  -n
+  Process files line by line using implicit 'line' variable
+  "]
+
+  e [shape=box label="
+  -e
+  Specify a command line script
+  "]
+
+  a [shape=box label="
+  -a
+  Split lines using splitPattern (default '\s') using implicit 'split' variable
+  "]
+
+  also [shape=none label="
+  Many langauges allow you to use -e to specify a small program as a literal.
+  awk, scala, jrunscript, python, perl, no, ruby,  ..."]
+}
+
+@enduml

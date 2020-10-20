@@ -27,4 +27,5 @@ source -> go -> graphviz -> dependencies
    URL="https://graphviz.org/Gallery/directed/go-package.svg"
  ]
 }
+
 @enduml
