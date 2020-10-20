@@ -1,5 +1,8 @@
 @startuml
 digraph G {
+     bgcolor="transparent"
+     node[style=filled color=white]
+     
 
 Java -> "C#" -> {Java, "Objective C"}
 Java -> "Objective C" -> Swift -> Java

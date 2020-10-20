@@ -1,5 +1,8 @@
 @startuml
 graph G {
+     bgcolor="transparent"
+     node[style=filled color=white]
+     
 
   vertex -- "node" [label="edge"]
   vertex -- point [label="line"]

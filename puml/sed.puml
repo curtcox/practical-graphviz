@@ -1,5 +1,8 @@
 @startuml
 digraph G {
+     bgcolor="transparent"
+     node[style=filled color=white]
+     
   rankdir=LR
   sed -> q1-> s -> d1 -> find -> d2 -> replace ->d3 -> g -> q2 [style=invis]
 

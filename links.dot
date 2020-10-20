@@ -1,6 +1,6 @@
 digraph G {
- rankdir=LR
 
+ rankdir=LR
 
 "When a Stranger Calls: Sanitizing SVGs" [
 shape=none

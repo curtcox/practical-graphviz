@@ -1,5 +1,8 @@
 @startuml
 digraph G {
+     bgcolor="transparent"
+     node[style=filled color=white]
+     
 
   #rankdir=LR
 

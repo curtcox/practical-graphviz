@@ -3,6 +3,7 @@
 # Questions?
 * You are not alone
 * Other people will have the same questions
+* Use the source
 ---
 ## Who is this guy?
 * Org chart
@@ -150,7 +151,6 @@
   - easy access to coordinates
   - several tools use Graphviz as a layout engine
 ---
-# HTML
 ![](./svg/html.svg)
 ---
 ## Online

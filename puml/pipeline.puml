@@ -1,5 +1,8 @@
 @startuml
 digraph G {
+     bgcolor="transparent"
+     node[style=filled color=white]
+     
 rankdir=LR
 #grep -riI import . | grep -v "[T|t]est"  | sed 's|./groovy/||' | sed 's/.groovy:import / -> /'
 imports -> no_tests -> no_folder -> arrow
