@@ -105,7 +105,7 @@
 * High level structures can be identified
 * Using them can clarify and simplify
 ---
-@code[bash, drag=67 84](dart_structure.sh?lines=8-22)
+@code[bash, drag=67 84](sh/dart_structure.sh?lines=8-22)
 ---
 ## Examples
 * [Meraki Web Gateway](https://github.com/curtcox/Meraki-Web-Gateway)
@@ -140,7 +140,7 @@
 * Where does the library go?
 * grep can tell you
 ---
-@code[bash, drag=297 64](what_depends_on_jackson.sh)
+@code[bash, drag=297 64](sh/what_depends_on_jackson.sh)
 @[1-1](Just the command)
 ---
 ## Embedded Links
