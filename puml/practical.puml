@@ -1,7 +1,9 @@
 @startuml
 digraph G {
-     bgcolor="transparent"
-     node[style=filled color=white]
+     
+  bgcolor="transparent"
+  node[style=filled color=white]
+     
      
 
  Practical [fontsize=40 shape=star style=filled color=yellow]

@@ -1,7 +1,9 @@
 @startuml
 digraph G {
-     bgcolor="transparent"
-     node[style=filled color=white]
+     
+  bgcolor="transparent"
+  node[style=filled color=white]
+     
      
 
 "Wired Network Diagram" [shape=none fontsize=20]
@@ -9,9 +11,25 @@ digraph G {
 modem -> { "diagnostic cable" , "edge router" }
 "edge router" -> { "wired router", "wifi router"}
 
+"edge router" [shape=trapezium]
+
 subgraph cluster_wired {
+style=filled
+color=purple
+
+subgraph cluster_wired_infrastructure {
+style=filled
+color=gray
+"wired router" [shape=trapezium]
+"wired switch 1" [shape=box]
+"wired switch 2" [shape=box]
+"wired switch 3" [shape=box]
+"printer switch" [shape=box]
+"linux switch" [shape=box]
 "wired router" -> "wired switch 1" [color=red]
 "wired router" -> "wired switch 2" [color=green]
+"wired switch 2" -> "wired switch 3" [color=blue]
+}
 
 "wired switch 1" -> {"breaker box","wired fing box"}
 "wired switch 1" -> "hallway canary" [color=gray]
@@ -19,7 +37,6 @@ subgraph cluster_wired {
 "wired switch 1" -> "linux switch" -> {"linux nuc", "rotating linux"}
 
 "wired switch 2" -> {"2008 MacPro", "2012 MacPro", "Sun Ultra 40"}
-"wired switch 2" -> "wired switch 3" [color=blue]
 "wired switch 3" -> {"mac mini", "rotating slots" }
 
 "printer switch" -> {
@@ -28,26 +45,50 @@ subgraph cluster_wired {
 }
 
 subgraph cluster_wifi {
-"wifi router" -> { "wifi fing box",  "wifi switch 1", "wifi switch 2"}
+style=filled
+color=pink
 
-"wifi switch 1" -> homeplug [color=gray]
-"wifi switch 1" -> "sub livinging room switch"
-
-"wifi switch 2" -> {"wifi debug laptop" ,"dining room switch"}
-"dining room switch" -> {"Dining room Chromebook","VoIP phone","dining room airport"}
-"dining room airport" -> {"dining room canary 1","nest mini","dining room desk switch"}
-"dining room desk switch" -> {"dining room canary 2","dining room desk laptop(s)"}
-
-"sub livinging room switch" -> {"living room airport" , "living room switch"}
-"living room switch" -> {FireTV, AppleTV, Roku, "Windwos 10"}
-
-"upstairs office airport" -> "upstairs office laptop"
-"upstairs bedroom airport" -> {
- "upstairs bedroom Chromebook", "FireTV DVR", "Hue Hub"
+subgraph cluster_wifi_infrastructure {
+style=filled
+color=gray
+"wifi router" [shape=trapezium]
+"wifi switch 1" [shape=box]
+"wifi switch 2" [shape=box]
+"dining room switch" [shape=box]
+"dining room desk switch" [shape=box]
+"living room switch" [shape=box]
+"sub living room switch" [shape=box]
+"living\nroom\nairport" [shape=doublecircle]
+"dining\nroom\nairport" [shape=doublecircle]
+"upstairs\nbedroom\nairport" [shape=doublecircle]
+"upstairs\noffice\nairport" [shape=doublecircle]
+"wifi switch 1" -> homeplug -> {"upstairs\noffice\nairport" , "upstairs\nbedroom\nairport"}
+"wifi switch 1" -> "sub living room switch"
 }
 
-homeplug -> {
-"upstairs office airport", "upstairs bedroom airport", "kitchen canary"
+"wifi router" -> { "wifi fing box",  "wifi switch 1", "wifi switch 2"}
+"wifi switch 2" -> {"wifi debug laptop" ,"dining room switch"}
+
+"dining room switch" -> {"Dining room Chromebook","VoIP phone","dining\nroom\nairport"}
+"dining\nroom\nairport" -> {"dining room canary 1","nest mini","dining room desk switch"}
+"dining room desk switch" -> {"dining room canary 2","dining room desk laptop(s)"}
+
+"sub living room switch" -> {"living\nroom\nairport" , "living room switch"}
+"living room switch" -> {FireTV, AppleTV, Roku, "Windwos 10"}
+
+"upstairs\noffice\nairport" -> "upstairs office laptop"
+"upstairs\nbedroom\nairport" -> {
+ "upstairs bedroom Chromebook", "FireTV DVR", "Hue Hub"
+}
+humeplug -> "kitchen canary"
+
+subgraph cluster_livingroom {
+style=filled
+color=tan
+  FireTV
+  AppleTV
+  Roku
+ "Windwos 10"
 }
 
 }

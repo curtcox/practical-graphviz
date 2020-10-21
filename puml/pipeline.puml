@@ -1,11 +1,19 @@
 @startuml
 digraph G {
-     bgcolor="transparent"
-     node[style=filled color=white]
+     
+  bgcolor="transparent"
+  node[style=filled color=white]
+     
      
 rankdir=LR
 #grep -riI import . | grep -v "[T|t]est"  | sed 's|./groovy/||' | sed 's/.groovy:import / -> /'
+subgraph cluster_1 {
+label="Pipeline"
+fontsize=30
+style=filled
+color=lightgray
 imports -> no_tests -> no_folder -> arrow
+}
 
 imports  [fontsize=30 shape=none
 label="grep -riI import ."

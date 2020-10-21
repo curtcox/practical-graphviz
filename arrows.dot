@@ -1,7 +1,5 @@
 digraph G {
 
-"Arrows"[shape=none fontsize=40]
-
 rankdir=LR
 
 title[label="https://graphviz.org/doc/info/arrows.html" URL="https://graphviz.org/doc/info/arrows.html" shape=none]

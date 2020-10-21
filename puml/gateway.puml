@@ -1,7 +1,9 @@
 @startuml
 digraph G {
-     bgcolor="transparent"
-     node[style=filled color=white]
+     
+  bgcolor="transparent"
+  node[style=filled color=white]
+     
      
 
  Server -> routes
@@ -19,7 +21,10 @@ digraph G {
  linker -> json
  linker -> routes
 
-subgraph cluster4 {
+subgraph cluster_gateway {
+ color=red
+ gateway [shape=none]
+ linker [shape=none]
  gateway -> linker
 }
 
@@ -28,19 +33,21 @@ subgraph cluster3 {
 }
 
 subgraph cluster1 {
- domain -> "java.time"
- domain -> "groovy.transform"
+ domain -> {"java.time" , "groovy.transform" }
 }
 
 subgraph cluster2 {
- routes -> gateway
- routes -> exec
+ routes -> { gateway, exec }
 }
 
 subgraph cluster0 {
- meraki -> json
- meraki -> http
+ meraki -> { json , http }
  http   -> "java.net"
+}
+
+subgraph cluster_key {
+  package
+  class [shape=none]
 }
 
 }

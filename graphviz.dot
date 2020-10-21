@@ -3,7 +3,7 @@ digraph G {
  Source -> Graphviz -> Diagrams [arrowsize=3 arrowhead=vee color=blue]
 
  Source   [fontsize=30 shape=folder]
- Graphviz [fontsize=50 shape=underline fontcolor=green color=green]
+ Graphviz [fontsize=50 shape=underline color=green]
  Diagrams [fontsize=20 shape=star style=filled color=yellow]
 
  "Human Readable"           -> Source

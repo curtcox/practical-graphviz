@@ -1,10 +1,10 @@
 @startuml
 digraph G {
-     bgcolor="transparent"
-     node[style=filled color=white]
      
-
-"Arrows"[shape=none fontsize=40]
+  bgcolor="transparent"
+  node[style=filled color=white]
+     
+     
 
 rankdir=LR
 

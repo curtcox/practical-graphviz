@@ -1,7 +1,9 @@
 @startuml
 digraph G {
-     bgcolor="transparent"
-     node[style=filled color=white]
+     
+  bgcolor="transparent"
+  node[style=filled color=white]
+     
      
 
 Server -> routes
@@ -24,8 +26,8 @@ subgraph cluster1 {
 }
 
 subgraph cluster2 {
-routes  -> gateway
-gateway -> routes
+routes  -> gateway -> routes [color=red]
+gateway [color=red]
 }
 
 subgraph cluster0 {
