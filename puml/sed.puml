@@ -3,11 +3,14 @@ digraph G {
      
   bgcolor="transparent"
   node[style=filled color=white]
+  edge[color=white]
      
      
   rankdir=LR
+  subgraph cluster_sed {
+  style=filled
+  color=lightgray
   sed -> q1-> s -> d1 -> find -> d2 -> replace ->d3 -> g -> q2 [style=invis]
-
   sed [shape=none]
   q1 [shape=none label="\""]
   q2 [shape=none label="\""]
@@ -18,6 +21,21 @@ digraph G {
   g [shape=none]
   find [shape=none]
   replace [shape=none]
+  }
+
+  "Edit text in a scriptable manner." -> sed
+
+  "command to execute" -> {q1,q2}
+
+  "delimiter :
+  / is traditional,
+  but | is often more convenient
+  " -> {d1,d2,d3}
+
+  "search and replace" -> s
+
+  "globally (not just the first one)" -> g
+
 }
 
 @enduml

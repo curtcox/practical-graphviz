@@ -3,12 +3,78 @@ digraph G {
      
   bgcolor="transparent"
   node[style=filled color=white]
+  edge[color=white]
      
      
+rankdir=LR
+
+subgraph cluster_a {
+  a1 -> a2 -> a3
+  subgraph cluster_b { b1  b2  b3 }
+  subgraph cluster_c { c1 -> c2 -> c3 }
+  subgraph cluster_d { color=blue d1 -> d2 -> d3 [style=invis] }
+  subgraph cluster_e { e1 -> e2 -> e3 }
+  subgraph f {
+    f1 -> f2 [minlen=0]
+    f2 -> f3 [minlen=1]
+    f3 -> f4 [minlen=2]
+    f4 -> f5 [minlen=3]
+  }
+}
+
+node [shape=none]
+
+s1 [label="
+subgraph cluster_prefix {\l
+  \"used for grouping\"\l
+  \"can be nested\"\l
+}\l
+" shape=none fontsize=30]
+
+s1 -> s2-> n1 -> n2 ->n3 [style=invis]
+n1 [label="
+Some layout control is possible, via:
+
+- rankdir
+- subgraph
+- rank
+- weight
+- hidden edges
+- minlen
+ ...
+" fontsize=25]
+
+n2 [label="
+\"Drawing graphs with dot\"
+contains info about using these
+to give layout hints to dot.
 "
-subgraph: used for grouping.
-Can be nested.
-" [shape=none fontsize=20]
+fontsize=30
+URL="https://www.graphviz.org/pdf/dotguide.pdf"]
+
+n3 [label="
+But if you need precise layout control,
+you will likely need to export to a
+file and use another editor.
+(That's another presentation)
+" fontsize=30 fontcolor=red]
+
+s2 [label="
+subgraph cluster_a {\l
+  a1 -> a2 -> a3\l
+  subgraph cluster_b { b1  b2  b3 }\l
+  subgraph cluster_c { c1 -> c2 -> c3 }\l
+  subgraph cluster_d { color=blue d1 -> d2 -> d3 [style=invis] }\l
+  subgraph cluster_e { e1 -> e2 -> e3 }\l
+  subgraph f {\l
+    f1 -> f2 [minlen=0]\l
+    f2 -> f3 [minlen=1]\l
+    f3 -> f4 [minlen=2]\l
+    f4 -> f5 [minlen=3]\l
+  }\l
+}\l
+"]
+
 }
 
 @enduml

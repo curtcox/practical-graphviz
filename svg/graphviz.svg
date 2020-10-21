@@ -20,7 +20,7 @@
 <title>Graphviz</title>
 <polygon fill="none" stroke="transparent" points="267.64,-333.05 64.64,-333.05 64.64,-270.05 267.64,-270.05 267.64,-333.05"/>
 <polyline fill="none" stroke="green" points="64.64,-270.05 267.64,-270.05 "/>
-<text text-anchor="middle" x="166.14" y="-289.05" font-family="Times,serif" font-size="50.00" fill="green">Graphviz</text>
+<text text-anchor="middle" x="166.14" y="-289.05" font-family="Times,serif" font-size="50.00">Graphviz</text>
 </g>
 <!-- Source&#45;&gt;Graphviz -->
 <g id="edge1" class="edge">

@@ -59,12 +59,15 @@
 * grep
 * sed
 * all the standard command line tools
+* man, Google, tldr
 * a language built for this stuff : awk, perl
 * a language that can be adapted to this : groovy
 +++
 @plantuml[drop=center, width=2000px](puml/grep.puml)
 +++
 @plantuml[drop=center, width=2000px](puml/sed.puml)
++++
+## [tldr sed](https://github.com/tldr-pages/tldr)
 +++
 @plantuml[drop=center, width=2000px](puml/groovy.puml)
 ---
@@ -82,7 +85,7 @@
 +++
 @plantuml[drop=center, width=1000px](puml/arrows.puml)
 +++
-@plantuml[drop=center, width=1000px](puml/subgraph.puml)
+@plantuml[drop=center, width=2000px](puml/subgraph.puml)
 ---
 ## Language Examples
 * [Go](https://graphviz.org/Gallery/directed/go-package.html)
@@ -102,10 +105,12 @@
 * High level structures can be identified
 * Using them can clarify and simplify
 +++
-@code[bash](dart_structure.sh)
+@code[bash, drag=67 84](dart_structure.sh?lines=8-22)
 ---
 ## Examples
 * [Meraki Web Gateway](https://github.com/curtcox/Meraki-Web-Gateway)
+* SBT
+* Network
 * Recipe
 +++
 @plantuml[drop=center, width=1800px](puml/pipeline.puml)
@@ -135,6 +140,8 @@
 * Where does the library go?
 * grep can tell you
 +++
+@code[bash, drag=297 64](what_depends_on_jackson.sh)
+@[1-1](Just the command)
 ---
 ## Embedded Links
 @plantuml[drop=center, pad=30px, width=1000px](puml/links.puml)

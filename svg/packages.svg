@@ -46,14 +46,14 @@
 <!-- gateway -->
 <g id="node3" class="node">
 <title>gateway</title>
-<ellipse fill="none" stroke="black" cx="120" cy="-250" rx="40.09" ry="18"/>
+<ellipse fill="none" stroke="red" cx="120" cy="-250" rx="40.09" ry="18"/>
 <text text-anchor="middle" x="120" y="-246.3" font-family="Times,serif" font-size="14.00">gateway</text>
 </g>
 <!-- routes&#45;&gt;gateway -->
 <g id="edge11" class="edge">
 <title>routes&#45;&gt;gateway</title>
-<path fill="none" stroke="black" d="M114.12,-304.05C113.3,-296.35 113.06,-287.03 113.39,-278.36"/>
-<polygon fill="black" stroke="black" points="116.89,-278.49 114.09,-268.28 109.91,-278.01 116.89,-278.49"/>
+<path fill="none" stroke="red" d="M114.12,-304.05C113.3,-296.35 113.06,-287.03 113.39,-278.36"/>
+<polygon fill="red" stroke="red" points="116.89,-278.49 114.09,-268.28 109.91,-278.01 116.89,-278.49"/>
 </g>
 <!-- meraki -->
 <g id="node5" class="node">
@@ -82,8 +82,8 @@
 <!-- gateway&#45;&gt;routes -->
 <g id="edge12" class="edge">
 <title>gateway&#45;&gt;routes</title>
-<path fill="none" stroke="black" d="M125.91,-268.28C126.71,-276.03 126.94,-285.36 126.59,-294.01"/>
-<polygon fill="black" stroke="black" points="123.09,-293.83 125.88,-304.05 130.08,-294.33 123.09,-293.83"/>
+<path fill="none" stroke="red" d="M125.91,-268.28C126.71,-276.03 126.94,-285.36 126.59,-294.01"/>
+<polygon fill="red" stroke="red" points="123.09,-293.83 125.88,-304.05 130.08,-294.33 123.09,-293.83"/>
 </g>
 <!-- json -->
 <g id="node4" class="node">

@@ -3,6 +3,7 @@ graph G {
      
   bgcolor="transparent"
   node[style=filled color=white]
+  edge[color=white]
      
      
 

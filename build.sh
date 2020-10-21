@@ -17,13 +17,15 @@ for f in *.dot; do
   dot -Tsvg -o svg/$base.svg $f
 done
 
+# Use the default style (white background, black edges) on these
 sed -i '' 's/STYLE_FOR_SLIDES//g' puml/workflow.puml
 sed -i '' 's/STYLE_FOR_SLIDES//g' puml/links.puml
 
-# Style remaining as transparent
+# Style remaining specially for slides
 for f in puml/*; do
   sed -i '' 's/STYLE_FOR_SLIDES/\
   bgcolor="transparent"\
   node[style=filled color=white]\
+  edge[color=white]\
      /g' $f
 done

@@ -59,12 +59,15 @@
 * grep
 * sed
 * all the standard command line tools
+* man, Google, tldr
 * a language built for this stuff : awk, perl
 * a language that can be adapted to this : groovy
 ---
 ![](./svg/grep.svg)
 ---
 ![](./svg/sed.svg)
+---
+## [tldr sed](https://github.com/tldr-pages/tldr)
 ---
 ![](./svg/groovy.svg)
 ---
@@ -102,10 +105,12 @@
 * High level structures can be identified
 * Using them can clarify and simplify
 ---
-@code[bash](dart_structure.sh)
+@code[bash, drag=67 84](dart_structure.sh?lines=8-22)
 ---
 ## Examples
 * [Meraki Web Gateway](https://github.com/curtcox/Meraki-Web-Gateway)
+* SBT
+* Network
 * Recipe
 ---
 ![](./svg/pipeline.svg)
@@ -135,6 +140,8 @@
 * Where does the library go?
 * grep can tell you
 ---
+@code[bash, drag=297 64](what_depends_on_jackson.sh)
+@[1-1](Just the command)
 ---
 ## Embedded Links
 ![](./svg/links.svg)

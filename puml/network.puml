@@ -3,8 +3,11 @@ digraph G {
      
   bgcolor="transparent"
   node[style=filled color=white]
+  edge[color=white]
      
      
+
+rankdir=LR
 
 "Wired Network Diagram" [shape=none fontsize=20]
 
@@ -65,30 +68,39 @@ color=gray
 "wifi switch 1" -> homeplug -> {"upstairs\noffice\nairport" , "upstairs\nbedroom\nairport"}
 "wifi switch 1" -> "sub living room switch"
 }
+homeplug -> "kitchen canary"
 
 "wifi router" -> { "wifi fing box",  "wifi switch 1", "wifi switch 2"}
 "wifi switch 2" -> {"wifi debug laptop" ,"dining room switch"}
 
-"dining room switch" -> {"Dining room Chromebook","VoIP phone","dining\nroom\nairport"}
-"dining\nroom\nairport" -> {"dining room canary 1","nest mini","dining room desk switch"}
-"dining room desk switch" -> {"dining room canary 2","dining room desk laptop(s)"}
+subgraph cluster_dining_room {
+  color = orange
+  "dining room switch" -> {"Dining room Chromebook","VoIP phone","dining\nroom\nairport"}
+  "dining\nroom\nairport" -> {"dining room canary 1","nest mini","dining room desk switch"}
+  "dining room desk switch" -> {"dining room canary 2","dining room desk laptop(s)"}
+}
 
 "sub living room switch" -> {"living\nroom\nairport" , "living room switch"}
 "living room switch" -> {FireTV, AppleTV, Roku, "Windwos 10"}
 
-"upstairs\noffice\nairport" -> "upstairs office laptop"
-"upstairs\nbedroom\nairport" -> {
- "upstairs bedroom Chromebook", "FireTV DVR", "Hue Hub"
+"upstairs\noffice\nairport" -> "upstairs office laptop" [weight=0]
+
+subgraph cluster_upstairs_office {
+  color=black
 }
-humeplug -> "kitchen canary"
+
+
+subgraph cluster_upstairs_bedroom {
+  color = gold
+  "upstairs\nbedroom\nairport" -> {
+    "upstairs bedroom Chromebook", "FireTV DVR", "Hue Hub"
+  }
+}
 
 subgraph cluster_livingroom {
 style=filled
 color=tan
-  FireTV
-  AppleTV
-  Roku
- "Windwos 10"
+  FireTV -> AppleTV -> Roku -> "Windwos 10" [style=invis]
 }
 
 }

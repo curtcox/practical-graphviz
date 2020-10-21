@@ -17,8 +17,8 @@ digraph G {
 
 subgraph cluster_gateway {
  color=red
- gateway [shape=none]
- linker [shape=none]
+ gateway [shape=plaintext]
+ linker  [shape=plaintext]
  gateway -> linker
 }
 
@@ -41,7 +41,7 @@ subgraph cluster0 {
 
 subgraph cluster_key {
   package
-  class [shape=none]
+  class [shape=plaintext]
 }
 
 }
