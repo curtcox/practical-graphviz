@@ -36,7 +36,7 @@ Vault[shape=box3d] Vault -> Sync [taillabel=config style=dotted]
 "Sync Flow"[shape=none fontsize=40]
 
 # Can you email this to me?
-URL[shape=none URL="https://dreampuf.github.io/GraphvizOnline/?url=https://raw.githubusercontent.com/curtcox/practical-graphviz/master/whiteboard.dot"]
+URL[shape=none URL="https://dreampuf.github.io/GraphvizOnline/?url=https://raw.githubusercontent.com/curtcox/practical-graphviz/master/dot/whiteboard.dot"]
 }
 
 @enduml
